@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content = "Rohith Satya Nivas home page">
+    <meta name="author" content = "Rohith Satya Nivas home page">
+    <meta name="keywords" content = "Web development,Python,AI,ML">
+
+    <meta property="og:title" content="Rohith's Home Page">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:description" content="Rohith's Home Page">
+    <link rel="icon" href="logo.png">
+    <title>Rohith Home Page</title>
+    <style type="text/css">
+        body{
+            /*background: linear-gradient(to bottom, #ff4800 0%, #ff4800 150px, #ffffff 150px, #ffffff 100%);*/
+            font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; color: black;margin: 0;
+            background: #ededed;
+        }
+        .active{color: white;}
+        .footer-link{ color: #333333;}
+        .hover-light:hover{background:white;color:#0ca2bd;}
+        .hover-dark:hover{background:#333333 !important;color:#911cff !important;}
+         #top-nav-dark{ background:#911cff;}
+         #top-nav-light{background:#0ca2bd;}
+        .darkmode{background: #333333 !important; color: #ededed !important;}
+        img{margin: auto;}
+    </style>
+</head>
+<body onload="Message()">
+    <div class="container">
+        <div class="row " id="top-nav-light">
+            <div class="col-lg-4">
+                <div class="row my-4">
+                    <div class="col">
+                        <h4 class="text-white mx-4"><b>Intro</b></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="row my-3">
+                    <div class="col text-center">
+                        <a class="nav-link active hover-light " href="#details">Home</a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="nav-link active hover-light active" href="#projectdetails">Project</a>
+                    </div>
+                    <div class="col text-center">
+                        <a class="nav-link active hover-light active" href="#activitydetails">Activities</a>
+                    </div>
+                    <div class="col text-center" >
+                        <a class="nav-link active hover-light active" href="#contactdetails">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="row my-3 mx-4" style="float: right;">
+                    <div class="btn btn-outline-light" onclick="darkswitch(this)"><i class="fa fa-moon"></i> Dark Mode</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row shadow mt-4 mb-4 mx-1">
+                    <div class="col-lg-3 darkswitching text-center pt-4">
+                        <img src="profile.jpg" width="200px">
+                    </div>
+                    <div class="col-lg-9 py-4">
+                        <div id="details" class="darkswitch">
+                            <p><b>Name: </b>Muchakarla Rohith Satya Nivas</p>
+                            <p><b>Education: </b>BTech 3rd year in civil Engineering,IIT Madras</p>
+                            <p><b>Born:</b> 17-01-2001</p>
+                            <p><b>Birth Place:</b> Vishakhapatnam, Andhra Pradesh</p>
+                            <p><b>Nationality:</b> Indian</p>
+                            <p id="extra" style="display: none;">That's all about me !</p>
+                            <div id="readmore" class="btn btn-light btn-outline-dark" onclick="readmore(this)" style="font-size: 10px;">Read More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shadow mt-4 mb-4 mx-1">
+                    <div class="col-lg-3 darkswitch text-center pt-4">
+                        <img src="1.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-9 py-4">
+                        <div id="projectdetails" class="darkswitching">
+                        <h4><u>Structural Analysis</u></h4>
+                            <p><i>Last Updated Today,2:00 AM IST </i></p>
+                        <p>Structural analysis is the process of calculating and determining the effects 
+                            of loads and internal forces on a structure, building or object. 
+                            Structural Analysis is particularly important for structural engineers 
+                            to ensure they completely understand the load paths and the impacts the loads
+                             have on their engineering design. 
+                        </p>
+                        <p id="extra" style="display: none;">
+                             It allows engineers or designers to ensure a piece 
+                             of equipment or structure is safe for use under the estimated loads it is expected to 
+                             withstand. Structural Analysis can either be performed during design, testing or 
+                             post-construction and will generally account for the materials used, 
+                             geometry of the structure and applied loads.
+                        </p>
+                            <div id="readmore" class="btn btn-light btn-outline-dark" onclick="readmore(this)" style="font-size: 10px;">Read More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shadow mt-4 mb-4 mx-1">
+                    <div class="col-lg-12 py-4">
+                        <div id="activitydetails" class="darkswitching">
+                            <h4 class="mx-2"><u>Activities/Position of Responsibilities</u></h4>
+                            <ul>
+                                <li>Current Design Team Core for Sports Organizing Committee IIT Madras</li>
+                                <li>Saarang20 Finance Team Coordinator</li>
+                                <li>Saathi Coordinator & Mentor, 2019-20</li>
+                                <li>Civil Engineering Association design team coordinator, 2018-19</li>
+                                <li>Civil Engineering Association Events team coordinator, 2018-19</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shadow mt-4 mb-4 mx-1">
+                    <div class="col-lg-12 py-4">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div id="contactdetails" class="darkswitching">
+                                    <h4 class="mx-2"><u>Contact</u></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-2" style="font-size: 30px;">
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="mailto: @rohithsatyanivas@gmail.com" target="_blank"><i class="fa fa-envelope "></i></a>
+                            </div>
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="tel: +91 7075539895"><i class="fa fa-phone" target="_blank"></i> </a>
+                            </div>
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="https://wa.me/916301343876" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+                            </div>
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="https://www.instagram.com/rohithsatyanivas.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="https://www.facebook.com/rohithsatyanivas" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="col pt-2 text-center">
+                                <a class="footer-link" href="https://in.linkedin.com/in/rohith-satya-nivas" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                          
+                        </div>
+                        <div class="row text-center mt-4" >
+                            <div class="col-md-12"style="font-size: 10px;">
+                                &copy;Rohithsatyanivas2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function Message(){
+            alert('Thanks to Autonise Team for Teaching me Web development stuff');
+        }
+        function readmore(elem){
+            var parentid = elem.parentNode.id;
+            var hiddenelement = document.getElementById(parentid).querySelector('#extra');
+            hiddenelement.style.display = (hiddenelement.style.display == 'none'?'block':'none');
+            elem.innerHTML = (elem.innerHTML=="Read More"?'Read Less':'Read More');
+        }
+        function darkswitch(elem){
+            var darkvariable = elem;
+            if(darkvariable.innerHTML=="<i class=\"fa fa-moon\"></i> Dark Mode")
+            {   let darkelements = document.getElementsByClassName('row');
+                let navbar = document.getElementById('top-nav-light');
+                let navbarlinks = document.getElementsByClassName('nav-link');
+                let footerlinks = document.getElementsByClassName('footer-link');
+                darkvariable.innerHTML = '<i class=\"fa fa-sun\"></i> Light Mode';
+                navbar.id = 'top-nav-dark';
+                document.body.style.backgroundColor = "#333333";
+                for(let i =5;i<darkelements.length-3;i++){
+                    darkelements[i].classList.add('darkmode');
+                }
+                for(let j=0; j<navbarlinks.length ; j++)
+                {
+                    navbarlinks[j].classList .add('hover-dark');
+                }
+                for(let k = 0;k<footerlinks.length;k++){
+                    footerlinks[k].style.color = '#ededed';
+                }
+            }
+            else{
+                let darkelements = document.getElementsByClassName('row');
+                let navbar = document.getElementById('top-nav-dark');
+                let navbarlinks = document.getElementsByClassName('nav-link');
+                let footerlinks = document.getElementsByClassName('footer-link');
+                navbar.id = 'top-nav-light';
+                darkvariable.innerHTML = '<i class=\"fa fa-moon\"></i> Dark Mode';
+                document.body.style.backgroundColor = '#ededed';
+                for(let i =5;i<darkelements.length;i++){
+                    darkelements[i].classList.remove('darkmode');
+                }
+                for(let j=0; j<navbarlinks.length ; j++)
+                {
+                    navbarlinks[j].classList.remove('hover-dark');
+                }
+                for(let k = 0;k<footerlinks.length;k++){
+                    footerlinks[k].style.color = '#333333';
+                }
+            }
+
+
+    }
+    </script>
+</body>
+</html>
